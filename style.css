@@ -1,85 +1,99 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vatican City and More</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <header>
-    <h1>Welcome to the Vatican City Website</h1>
-  </header>
+/* General styles for the body */
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(to bottom, #0e0e0e, #03045e); /* Dark blue to black gradient */
+  color: white;
+  margin: 0;
+  padding: 0;
+  transition: background 1s ease;
+}
 
-  <section id="vatican-city">
-    <h2>Vatican City</h2>
-    <p>A city-state and the smallest country in the world...</p>
-    <ul>
-      <li><strong>Population:</strong> 764 (as of the latest data).</li>
-      <li><strong>Size:</strong> 0.44 sq km.</li>
-      <li><strong>Theocracy:</strong> A state governed by divine guidance.</li>
-      <li><strong>Famous resident:</strong> The Pope.</li>
-      <li><strong>Founded:</strong> February 11, 1929, with the Lateran Treaty.</li>
-    </ul>
-    <div class="interesting-facts">
-      <h3>Interesting Facts</h3>
-      <ul>
-        <li>No prison—offenders are sent to Italian jails.</li>
-        <li>It has the only ATM in the world with instructions in Latin.</li>
-        <li>It has one of the highest crime rates per capita due to pickpocketing.</li>
-        <li>It has its own postal service, faster than Italy’s.</li>
-      </ul>
-    </div>
-  </section>
+/* Header styles */
+header {
+  text-align: center;
+  padding: 40px;
+  background-color: rgba(0, 0, 0, 0.8);
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+}
 
-  <section id="christianity">
-    <h2>History of Christianity</h2>
-    <p>Christianity began in the 1st century AD...</p>
-    <ul>
-      <li><strong>Founder:</strong> Jesus Christ.</li>
-      <li><strong>Beliefs:</strong> Jesus is the Son of God and Messiah.</li>
-      <li><strong>Key Event:</strong> Legalization of Christianity in 313 AD by Emperor Constantine.</li>
-    </ul>
-  </section>
+h1 {
+  font-size: 3rem;
+  color: white;
+  animation: fadeInUp 2s ease-out;
+}
 
-  <section id="buenos-aires">
-    <h2>Buenos Aires</h2>
-    <p>Pope Francis was born in this city...</p>
-    <ul>
-      <li><strong>Country:</strong> Argentina.</li>
-      <li><strong>Founded:</strong> 1536, re-established in 1580.</li>
-      <li><strong>Nickname:</strong> Porteño (Person of the port).</li>
-    </ul>
-    <div class="interesting-facts">
-      <h3>Interesting Facts</h3>
-      <ul>
-        <li>Widest avenue in the world—Avenida 9 de Julio.</li>
-        <li>Most bookstores per capita in the world.</li>
-        <li>Known for tango and its European influence.</li>
-      </ul>
-    </div>
-  </section>
+/* Section styles */
+section {
+  padding: 40px;
+  margin: 20px auto;
+  max-width: 1000px;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 12px;
+  opacity: 0;
+  animation: fadeIn 1.5s ease-in-out forwards, slideUp 1s ease-out forwards;
+}
 
-  <section id="st-francis">
-    <h2>St. Francis of Assisi</h2>
-    <ul>
-      <li><strong>Full Name:</strong> Giovanni di Pietro di Bernardone.</li>
-      <li><strong>Born:</strong> 1181 or 1182, Italy.</li>
-      <li><strong>Death:</strong> October 3, 1226.</li>
-      <li><strong>Notable for:</strong> Founded the Franciscan Order.</li>
-    </ul>
-    <div class="interesting-facts">
-      <h3>Interesting Facts</h3>
-      <ul>
-        <li>Renounced wealth for a life of poverty.</li>
-        <li>Believed to have received the stigmata.</li>
-        <li>Created the first nativity scene in 1223.</li>
-      </ul>
-    </div>
-  </section>
+/* Title styles */
+h2 {
+  font-size: 2.5rem;
+  color: white;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  animation: fadeInUp 1.5s ease-out;
+}
 
-  <footer>
-    <p>&copy; 2025 Vatican City Web.</p>
-  </footer>
-</body>
-</html>
+/* List item styles */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin: 15px 0;
+  font-size: 1.2rem;
+  color: #b0b0b0;
+  line-height: 1.6;
+}
+
+li strong {
+  color: #f5c93f;
+}
+
+/* Interesting facts section */
+.interesting-facts h3 {
+  font-size: 1.8rem;
+  margin-top: 30px;
+  color: #f5c93f;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  animation: fadeInUp 1.5s ease-out;
+}
+
+/* Footer styles */
+footer {
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.9);
+  padding: 15px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.5);
+  color: #b0b0b0;
+}
+
+/* Keyframe animations for smooth transitions */
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideUp {
+  0% { opacity: 0; transform: translateY(50px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
