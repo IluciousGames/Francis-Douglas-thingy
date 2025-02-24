@@ -1,108 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RST Extra Research Assignment</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background: linear-gradient(to right, #1a1a2e, #16213e);
-            color: white;
-            margin: 0;
-            padding: 20px;
-            text-align: center;
-        }
-        .container {
-            max-width: 800px;
-            margin: auto;
-            background: rgba(0, 0, 0, 0.7);
-            padding: 20px;
-            border-radius: 10px;
-            opacity: 0;
-            transform: translateY(20px);
-            transition: opacity 1s ease-out, transform 1s ease-out;
-        }
-        h1, h2 {
-            color: #ffd700;
-        }
-        ul {
-            text-align: left;
-        }
-        .fade-in {
-            opacity: 0;
-            transform: translateY(20px);
-            transition: opacity 1s ease-out, transform 1s ease-out;
-        }
-        .fade-in.visible {
-            opacity: 1;
-            transform: translateY(0);
-        }
-    </style>
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            const elements = document.querySelectorAll(".fade-in");
-            const observer = new IntersectionObserver(entries => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add("visible");
-                    }
-                });
-            }, { threshold: 0.1 });
-
-            elements.forEach(element => {
-                observer.observe(element);
-            });
-        });
-    </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vatican City and More</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container fade-in">
-        <h1>Pope Francis</h1>
-        <p><strong>Birth Name:</strong> Jorge Mario Bergoglio</p>
-        <p><strong>Date of Birth:</strong> December 17, 1936</p>
-        <p><strong>Place of Birth:</strong> Buenos Aires, Argentina</p>
-        <p><strong>Ordained as a Priest:</strong> December 13, 1969</p>
-        <p><strong>Became an Archbishop:</strong> February 28, 1998</p>
-        <p><strong>Became a Cardinal:</strong> February 21, 2001</p>
-        <p><strong>Became the Pope:</strong> March 13, 2013</p>
-        <h2>Interesting Facts</h2>
-        <ul>
-            <li>First pope from the Americas and first Jesuit pope.</li>
-            <li>Worked as a nightclub bouncer before joining the seminary.</li>
-            <li>Chose the name "Francis" after St. Francis of Assisi.</li>
-            <li>Focuses on social justice, environmental issues, and interfaith dialogue.</li>
-        </ul>
+  <header>
+    <h1>Welcome to the Vatican City Website</h1>
+  </header>
+
+  <section id="vatican-city">
+    <h2>Vatican City</h2>
+    <p>A city-state and the smallest country in the world...</p>
+    <ul>
+      <li><strong>Population:</strong> 764 (as of the latest data).</li>
+      <li><strong>Size:</strong> 0.44 sq km.</li>
+      <li><strong>Theocracy:</strong> A state governed by divine guidance.</li>
+      <li><strong>Famous resident:</strong> The Pope.</li>
+      <li><strong>Founded:</strong> February 11, 1929, with the Lateran Treaty.</li>
+    </ul>
+    <div class="interesting-facts">
+      <h3>Interesting Facts</h3>
+      <ul>
+        <li>No prison—offenders are sent to Italian jails.</li>
+        <li>It has the only ATM in the world with instructions in Latin.</li>
+        <li>It has one of the highest crime rates per capita due to pickpocketing.</li>
+        <li>It has its own postal service, faster than Italy’s.</li>
+      </ul>
     </div>
-    
-    <div class="container fade-in">
-        <h1>The Roman Catholic Church</h1>
-        <p><strong>Holy Text:</strong> The Bible (Old & New Testament)</p>
-        <p><strong>Global Leader:</strong> The Pope (Currently Pope Francis)</p>
-        <p><strong>Headquarters:</strong> Vatican City</p>
-        <p><strong>Number of Catholics Worldwide:</strong> About 1.3 billion</p>
-        <h2>Interesting Facts</h2>
-        <ul>
-            <li>The Vatican is the smallest independent country in the world.</li>
-            <li>Latin is still the official language of the Church.</li>
-            <li>The Pope has his own army, the Swiss Guard.</li>
-            <li>The Catholic Church is the world's largest provider of education and healthcare services.</li>
-        </ul>
+  </section>
+
+  <section id="christianity">
+    <h2>History of Christianity</h2>
+    <p>Christianity began in the 1st century AD...</p>
+    <ul>
+      <li><strong>Founder:</strong> Jesus Christ.</li>
+      <li><strong>Beliefs:</strong> Jesus is the Son of God and Messiah.</li>
+      <li><strong>Key Event:</strong> Legalization of Christianity in 313 AD by Emperor Constantine.</li>
+    </ul>
+  </section>
+
+  <section id="buenos-aires">
+    <h2>Buenos Aires</h2>
+    <p>Pope Francis was born in this city...</p>
+    <ul>
+      <li><strong>Country:</strong> Argentina.</li>
+      <li><strong>Founded:</strong> 1536, re-established in 1580.</li>
+      <li><strong>Nickname:</strong> Porteño (Person of the port).</li>
+    </ul>
+    <div class="interesting-facts">
+      <h3>Interesting Facts</h3>
+      <ul>
+        <li>Widest avenue in the world—Avenida 9 de Julio.</li>
+        <li>Most bookstores per capita in the world.</li>
+        <li>Known for tango and its European influence.</li>
+      </ul>
     </div>
-    
-    <div class="container fade-in">
-        <h1>St. Peter’s Basilica</h1>
-        <p><strong>Location:</strong> Vatican City</p>
-        <p><strong>Completed:</strong> 1626 (Nearly 400 years old)</p>
-        <p><strong>Full Name:</strong> Papal Basilica of Saint Peter in the Vatican</p>
-        <p><strong>Designed By:</strong> Michelangelo, Donato Bramante, Carlo Maderno, Gian Lorenzo Bernini</p>
-        <h2>Interesting Facts</h2>
-        <ul>
-            <li>Has the world’s tallest dome (136.57 meters / 448 feet).</li>
-            <li>Not the official cathedral of the Pope (St. John Lateran Basilica is).</li>
-            <li>Home to Michelangelo’s famous Pietà sculpture.</li>
-            <li>The interior can hold over 60,000 people.</li>
-        </ul>
+  </section>
+
+  <section id="st-francis">
+    <h2>St. Francis of Assisi</h2>
+    <ul>
+      <li><strong>Full Name:</strong> Giovanni di Pietro di Bernardone.</li>
+      <li><strong>Born:</strong> 1181 or 1182, Italy.</li>
+      <li><strong>Death:</strong> October 3, 1226.</li>
+      <li><strong>Notable for:</strong> Founded the Franciscan Order.</li>
+    </ul>
+    <div class="interesting-facts">
+      <h3>Interesting Facts</h3>
+      <ul>
+        <li>Renounced wealth for a life of poverty.</li>
+        <li>Believed to have received the stigmata.</li>
+        <li>Created the first nativity scene in 1223.</li>
+      </ul>
     </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Vatican City Web.</p>
+  </footer>
 </body>
 </html>
