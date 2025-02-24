@@ -48,7 +48,7 @@
                         entry.target.classList.add("visible");
                     }
                 });
-            }, { threshold: 0.1 });
+            }, { threshold: 0.1 }); // When 10% of the element is in view
 
             elements.forEach(element => {
                 observer.observe(element);
