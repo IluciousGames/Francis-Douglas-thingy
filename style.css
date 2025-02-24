@@ -1,65 +1,85 @@
-body {
-  font-family: 'Arial', sans-serif;
-  background: linear-gradient(to bottom, #2e3b4e, #1d1f29);
-  color: white;
-  margin: 0;
-  padding: 0;
-  transition: background 1s ease;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vatican City and More</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Welcome to the Vatican City Website</h1>
+  </header>
 
-header {
-  text-align: center;
-  padding: 20px;
-  background-color: rgba(0, 0, 0, 0.8);
-}
+  <section id="vatican-city">
+    <h2>Vatican City</h2>
+    <p>A city-state and the smallest country in the world...</p>
+    <ul>
+      <li><strong>Population:</strong> 764 (as of the latest data).</li>
+      <li><strong>Size:</strong> 0.44 sq km.</li>
+      <li><strong>Theocracy:</strong> A state governed by divine guidance.</li>
+      <li><strong>Famous resident:</strong> The Pope.</li>
+      <li><strong>Founded:</strong> February 11, 1929, with the Lateran Treaty.</li>
+    </ul>
+    <div class="interesting-facts">
+      <h3>Interesting Facts</h3>
+      <ul>
+        <li>No prison—offenders are sent to Italian jails.</li>
+        <li>It has the only ATM in the world with instructions in Latin.</li>
+        <li>It has one of the highest crime rates per capita due to pickpocketing.</li>
+        <li>It has its own postal service, faster than Italy’s.</li>
+      </ul>
+    </div>
+  </section>
 
-h1 {
-  font-size: 3rem;
-  color: #f5c93f;
-  animation: fadeIn 2s ease-in-out;
-}
+  <section id="christianity">
+    <h2>History of Christianity</h2>
+    <p>Christianity began in the 1st century AD...</p>
+    <ul>
+      <li><strong>Founder:</strong> Jesus Christ.</li>
+      <li><strong>Beliefs:</strong> Jesus is the Son of God and Messiah.</li>
+      <li><strong>Key Event:</strong> Legalization of Christianity in 313 AD by Emperor Constantine.</li>
+    </ul>
+  </section>
 
-section {
-  padding: 40px;
-  margin: 20px auto;
-  max-width: 1000px;
-  background: rgba(0, 0, 0, 0.7);
-  border-radius: 10px;
-  opacity: 0;
-  animation: fadeIn 1.5s ease-in-out forwards;
-}
+  <section id="buenos-aires">
+    <h2>Buenos Aires</h2>
+    <p>Pope Francis was born in this city...</p>
+    <ul>
+      <li><strong>Country:</strong> Argentina.</li>
+      <li><strong>Founded:</strong> 1536, re-established in 1580.</li>
+      <li><strong>Nickname:</strong> Porteño (Person of the port).</li>
+    </ul>
+    <div class="interesting-facts">
+      <h3>Interesting Facts</h3>
+      <ul>
+        <li>Widest avenue in the world—Avenida 9 de Julio.</li>
+        <li>Most bookstores per capita in the world.</li>
+        <li>Known for tango and its European influence.</li>
+      </ul>
+    </div>
+  </section>
 
-h2 {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
-  color: #f5c93f;
-}
+  <section id="st-francis">
+    <h2>St. Francis of Assisi</h2>
+    <ul>
+      <li><strong>Full Name:</strong> Giovanni di Pietro di Bernardone.</li>
+      <li><strong>Born:</strong> 1181 or 1182, Italy.</li>
+      <li><strong>Death:</strong> October 3, 1226.</li>
+      <li><strong>Notable for:</strong> Founded the Franciscan Order.</li>
+    </ul>
+    <div class="interesting-facts">
+      <h3>Interesting Facts</h3>
+      <ul>
+        <li>Renounced wealth for a life of poverty.</li>
+        <li>Believed to have received the stigmata.</li>
+        <li>Created the first nativity scene in 1223.</li>
+      </ul>
+    </div>
+  </section>
 
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-li {
-  margin: 10px 0;
-}
-
-.interesting-facts h3 {
-  font-size: 1.8rem;
-  margin-top: 30px;
-  color: #f5c93f;
-}
-
-footer {
-  text-align: center;
-  background-color: rgba(0, 0, 0, 0.9);
-  padding: 15px;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-}
-
-@keyframes fadeIn {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
-}
+  <footer>
+    <p>&copy; 2025 Vatican City Web.</p>
+  </footer>
+</body>
+</html>
