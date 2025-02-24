@@ -7,7 +7,7 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background: linear-gradient(to right, #2c3e50, #34495e);
+            background: linear-gradient(to right, #1a1a2e, #16213e);
             color: white;
             margin: 0;
             padding: 20px;
@@ -16,15 +16,21 @@
         .container {
             max-width: 800px;
             margin: auto;
-            background: rgba(0, 0, 0, 0.85);
+            background: rgba(0, 0, 0, 0.7);
             padding: 20px;
             border-radius: 10px;
+            opacity: 0;
+            animation: fadeIn 1.5s ease-in-out forwards;
         }
         h1, h2 {
-            color: #f1c40f;
+            color: #ffd700;
         }
         ul {
             text-align: left;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
         }
     </style>
 </head>
